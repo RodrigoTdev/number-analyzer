@@ -13,8 +13,8 @@ Dim currentDirectory
 currentDirectory = Left(WScript.ScriptFullName, InStrRev(WScript.ScriptFullName, "\"))
 
 ' Run init-vscode.bat from the current directory
-objShell.Run currentDirectory & "init-vscode.bat", 0
-WScript.Sleep 5000
+' objShell.Run currentDirectory & "init-vscode.bat", 0
+' WScript.Sleep 5000
 
 ' Run init-proyect.bat from the current directory
 objShell.Run currentDirectory & "init-proyect.bat", 0

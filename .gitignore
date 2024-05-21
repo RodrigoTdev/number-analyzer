@@ -7,6 +7,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+init-protect.bat
+init-vscode.bat
+open.vbs
 node_modules
 dist
 dist-ssr
