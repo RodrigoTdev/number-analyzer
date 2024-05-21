@@ -42,7 +42,7 @@ export const Numbers = ({
     return Array.from(repeatedNumbers)
   }
 
-  console.log(checkRepeatedNumbers(numbersData))
+
 
   return (
     <div className='numbers-container'>
