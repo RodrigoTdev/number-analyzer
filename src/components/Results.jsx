@@ -8,6 +8,7 @@ export const Results = ({ numbersData, winners }) => {
 
   let winnersTwoDigitsCount = []
   let winnersThreeDigitsCount = []
+  let winnersFourDigitsCount = []
 
   //Funcion para numeros ganadores
   function checkWinners(digits, numbers, winners, array) {
@@ -24,18 +25,21 @@ export const Results = ({ numbersData, winners }) => {
 
   checkWinners(2, numbersData, winnersArray, winnersTwoDigitsCount)
   checkWinners(1, numbersData, winnersArray, winnersThreeDigitsCount)
+  checkWinners(0, numbersData, winnersArray, winnersFourDigitsCount)
 
   return (
     <div className='container'>
       <h1 style={{ color: 'green' }}>Premios</h1>
       <h3>Premio: {`$${winnersTwoDigitsCount.length * 2800}`}</h3>
       <h3>Premio: {`$${winnersThreeDigitsCount.length * 24000}`}</h3>
+      <h3>Premio: {`$${winnersFourDigitsCount.length * 140000}`}</h3>
       <hr />
       <h2 style={{ color: 'red' }}>
         Total:{' '}
         {`$${
           winnersTwoDigitsCount.length * 2800 +
-          winnersThreeDigitsCount.length * 24000
+          winnersThreeDigitsCount.length * 24000 +
+          winnersFourDigitsCount.length * 140000
         }`}
       </h2>
 
