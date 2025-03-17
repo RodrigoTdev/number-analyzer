@@ -30,16 +30,16 @@ export const Results = ({ numbersData, winners }) => {
   return (
     <div className='container'>
       <h1 style={{ color: 'green' }}>Premios</h1>
-      <h3>Premio: {`$${winnersTwoDigitsCount.length * 2800}`}</h3>
-      <h3>Premio: {`$${winnersThreeDigitsCount.length * 24000}`}</h3>
-      <h3>Premio: {`$${winnersFourDigitsCount.length * 140000}`}</h3>
+      <h3>Premio: {`$${winnersTwoDigitsCount.length * 3500}`}</h3>
+      <h3>Premio: {`$${winnersThreeDigitsCount.length * 30000}`}</h3>
+      <h3>Premio: {`$${winnersFourDigitsCount.length * 175000}`}</h3>
       <hr />
       <h2 style={{ color: 'red' }}>
         Total:{' '}
         {`$${
-          winnersTwoDigitsCount.length * 2800 +
-          winnersThreeDigitsCount.length * 24000 +
-          winnersFourDigitsCount.length * 140000
+          winnersTwoDigitsCount.length * 3500 +
+          winnersThreeDigitsCount.length * 30000 +
+          winnersFourDigitsCount.length * 175000
         }`}
       </h2>
 
